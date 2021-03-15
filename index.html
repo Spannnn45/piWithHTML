@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+	<span id="pi">3.1415</span>
+	<script>
+		const piSpan = document.getElementById("pi");
+		let i = 1;
+		let piNumber = 0;
+
+		var intervalID = window.setInterval(() => {
+			piNumber += 1/(i*i)
+			piSpan.innerHTML = Math.sqrt(piNumber*6);
+			i++;
+		}, 10);
+	</script>
+</html>
